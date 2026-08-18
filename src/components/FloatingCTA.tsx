@@ -19,7 +19,7 @@ export function FloatingCTA() {
         href={site.routes.qualify}
         className="inline-flex min-h-[44px] items-center justify-center px-5 text-sm font-semibold text-bt-paper transition-colors duration-300 hover:text-bt-lavender"
       >
-        {copy.floatingCta.qualify}
+        {copy.floatingCta.survey}
       </a>
     </div>
   );

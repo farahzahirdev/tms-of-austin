@@ -1,4 +1,13 @@
+const ctas = {
+  call: "Call",
+  qualify: "Find out if you Qualify",
+  qualifyShort: "Qualify",
+  bookConsult: "Book your Free Consultation",
+  bookConsultShort: "Book Consult",
+} as const;
+
 export const copy = {
+  ctas,
   header: {
     nav: {
       tms: "About Deep TMS",
@@ -8,7 +17,7 @@ export const copy = {
       locations: "Locations",
       faq: "FAQ",
     },
-    qualifyCta: "Find out if you Qualify",
+    qualifyCta: ctas.bookConsultShort,
   },
   hero: {
     tagline: "Feel like yourself again.",
@@ -18,8 +27,8 @@ export const copy = {
     headlineAccent: "& OCD",
     subheadline:
       "FDA-approved Deep TMS with BrainsWay — a non-invasive, medication-free treatment for adults in the greater Austin area who haven't found enough relief with medication alone.",
-    primaryCta: "Call",
-    secondaryCta: "Find out if you Qualify",
+    primaryCta: ctas.call,
+    secondaryCta: ctas.qualify,
     chips: [
       { label: "FDA-Approved", icon: "shield" as const },
       { label: "Non-Invasive", icon: "brain" as const },
@@ -68,7 +77,7 @@ export const copy = {
         body: "Treatment fits into your weekly routine with brief in-office visits and no recovery time needed.",
       },
     ],
-    cta: "Find out if you Qualify",
+    cta: ctas.qualify,
   },
   whyChoose: {
     eyebrow: "Why TMS of Austin",
@@ -135,7 +144,7 @@ export const copy = {
         tag: "Non-Invasive",
       },
     ],
-    cta: "Find out if you Qualify",
+    cta: ctas.qualify,
     note: "Treatment eligibility is determined after an in-person evaluation and safety screening. Individual results vary.",
   },
   meetDoctor: {
@@ -146,8 +155,8 @@ export const copy = {
       "Dr. Aragon is a double Board-Certified Adult Psychiatrist who is Fellowship-trained in Consultation-Liaison Psychiatry. During his training, he developed extensive experience in managing complex psychiatric disorders. During his fellowship training, he specialized in handling acute medical illnesses' psychiatric manifestations.",
     highlight:
       "Currently serving as the founder and Medical Director for TMS of Austin, Dr. Aragon brings his expertise to deliver state-of-the-art treatment for psychiatric disorders such as TMS, CES, esketamine and Neurofeedback.",
-    primaryCta: "Call",
-    secondaryCta: "Find out if you Qualify",
+    primaryCta: ctas.call,
+    secondaryCta: ctas.bookConsult,
   },
   locations: {
     eyebrow: "Locations",
@@ -186,25 +195,26 @@ export const copy = {
     ],
   },
   qualify: {
-    eyebrow: "Get Started",
-    headline: "Find out if you Qualify",
-    body: "Answer a few quick questions and our team will follow up to discuss candidacy, insurance verification, and whether Deep TMS may be right for you.",
+    eyebrow: "Free Consultation",
+    headline: ctas.bookConsult,
+    body: "Answer a few quick questions about your symptoms and treatment history. If Deep TMS may be right for you, you can schedule on the next step.",
     formTitle: "Qualification Survey",
-    formSubtitle: "Confidential. Our team typically responds within one business day.",
+    formSubtitle: "Confidential. Takes about 2 minutes.",
     callPrompt: "Prefer to talk now?",
     trustLine: "Treatment eligibility is determined after an in-person evaluation. Individual results vary.",
   },
   finalCta: {
     headline: "Ready to Feel Like Yourself Again?",
-    body: "Call TMS of Austin to schedule your free consultation, or take our quick survey to find out if Deep TMS with BrainsWay may be right for you.",
-    primaryCta: "Call",
-    secondaryCta: "Find out if you Qualify",
+    body: "Call TMS of Austin to speak with our team, or book your free consultation online — answer a few quick questions to get started.",
+    primaryCta: ctas.call,
+    secondaryCta: ctas.bookConsult,
   },
   floatingCta: {
-    qualify: "Qualify",
-    call: "Call",
+    survey: ctas.bookConsultShort,
+    call: ctas.call,
   },
   footer: {
+    surveyCta: ctas.bookConsult,
     tagline:
       "FDA-approved BrainsWay Deep TMS in Austin, TX — serving South Austin, North/Central Austin, Cedar Park, and the greater metro area.",
     disclaimer:

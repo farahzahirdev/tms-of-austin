@@ -11,7 +11,6 @@ export const site = {
   website: "https://www.tmsofaustin.com",
   routes: {
     qualify: "/#qualify",
-    inquiry: "/#qualify",
     tms: "/#tms",
     whyChoose: "/#why-choose",
     whoQualifies: "/#who-qualifies",
