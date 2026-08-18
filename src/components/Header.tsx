@@ -11,7 +11,6 @@ const navItems = [
   { href: site.routes.tms, label: copy.header.nav.tms },
   { href: site.routes.whyChoose, label: copy.header.nav.whyChoose },
   { href: site.routes.whoQualifies, label: copy.header.nav.whoQualifies },
-  { href: site.routes.meetDoctor, label: copy.header.nav.meetDoctor },
   { href: site.routes.locations, label: copy.header.nav.locations },
   { href: site.routes.faq, label: copy.header.nav.faq },
 ];
