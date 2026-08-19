@@ -573,16 +573,37 @@ html {
   z-index: 1;
   background:
     linear-gradient(
-      to right,
-      rgba(248, 250, 251, 0.97) 0%,
-      rgba(248, 250, 251, 0.93) 30%,
-      rgba(238, 244, 247, 0.78) 42%,
-      rgba(248, 250, 251, 0.18) 52%,
-      transparent 58%
+      95deg,
+      rgba(248, 250, 251, 0.98) 0%,
+      rgba(248, 250, 251, 0.94) 40%,
+      rgba(238, 244, 247, 0.82) 58%,
+      rgba(248, 250, 251, 0.45) 72%,
+      transparent 88%
     ),
-    linear-gradient(to top, rgba(248, 250, 251, 0.8) 0%, transparent 26%) left bottom / 62% 100%
-      no-repeat;
+    linear-gradient(
+      180deg,
+      rgba(248, 250, 251, 0.97) 0%,
+      rgba(248, 250, 251, 0.92) 45%,
+      rgba(238, 244, 247, 0.86) 100%
+    ),
+    linear-gradient(to top, rgba(248, 250, 251, 0.88) 0%, transparent 32%);
   pointer-events: none;
+}
+
+@media (min-width: 1024px) {
+  .bt-hero-overlay {
+    background:
+      linear-gradient(
+        to right,
+        rgba(248, 250, 251, 0.97) 0%,
+        rgba(248, 250, 251, 0.93) 30%,
+        rgba(238, 244, 247, 0.78) 42%,
+        rgba(248, 250, 251, 0.18) 52%,
+        transparent 58%
+      ),
+      linear-gradient(to top, rgba(248, 250, 251, 0.8) 0%, transparent 26%) left bottom / 62% 100%
+        no-repeat;
+  }
 }
 
 .bt-hero-inner {
@@ -796,19 +817,6 @@ html {
 
   .bt-hero-bg-img {
     object-position: 66% 10%;
-  }
-
-  .bt-hero-overlay {
-    background:
-      linear-gradient(
-        to right,
-        rgba(248, 250, 251, 0.98) 0%,
-        rgba(248, 250, 251, 0.92) 36%,
-        rgba(238, 244, 247, 0.5) 48%,
-        transparent 58%
-      ),
-      linear-gradient(to top, rgba(248, 250, 251, 0.72) 0%, transparent 24%) left bottom / 100% 40%
-        no-repeat;
   }
 }
 
