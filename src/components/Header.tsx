@@ -69,8 +69,8 @@ export function Header() {
               ))}
             </div>
             <div className="bt-nav-pill-actions">
-              <Button href={site.routes.qualify} variant="secondary" className="bt-nav-pill-cta !h-10 !px-5 !text-sm">
-                {copy.header.qualifyCta}
+              <Button href={site.routes.bookConsult} variant="secondary" className="bt-nav-pill-cta !h-10 !px-5 !text-sm">
+                {copy.header.bookCta}
               </Button>
               <Button
                 href={site.phoneHref}
@@ -103,8 +103,8 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <Button href={site.routes.qualify} variant="secondary" className="bt-mobile-nav-cta w-full" onClick={close}>
-              {copy.header.qualifyCta}
+            <Button href={site.routes.bookConsult} variant="secondary" className="bt-mobile-nav-cta w-full" onClick={close}>
+              {copy.header.bookCta}
             </Button>
             <Button href={site.phoneHref} className="w-full" onClick={close}>
               <Phone className="h-4 w-4" aria-hidden />

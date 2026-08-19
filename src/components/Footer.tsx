@@ -28,7 +28,7 @@ export function Footer() {
             <div className="site-footer-cta">
               <p className="site-footer-cta-text">Ready to see if Deep TMS is right for you?</p>
               <div className="flex flex-wrap gap-3">
-                <Button href={site.routes.qualify}>{copy.footer.surveyCta}</Button>
+                <Button href={site.routes.bookConsult}>{copy.footer.bookCta}</Button>
                 <Button href={site.phoneHref} variant="secondary-light">
                   <Phone className="h-4 w-4" aria-hidden />
                   {site.phone}

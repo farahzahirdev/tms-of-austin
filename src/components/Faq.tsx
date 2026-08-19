@@ -47,7 +47,7 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="bt-section bt-section-alt">
+    <section id="faq" className="bt-section bg-white">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <div className="bt-embed-layout">
           <Reveal className="faq-split-media lg:sticky lg:top-28 lg:self-start">
@@ -55,9 +55,9 @@ export function Faq() {
               <div className="relative aspect-[721/409] w-full">
                 <Image
                   src={site.images.faq}
-                  alt="Person thoughtfully considering questions about Deep TMS treatment"
+                  alt="TMS of Austin clinic exterior in South Austin"
                   fill
-                  className="object-cover object-[62%_center] transition-transform duration-700 ease-brand hover:scale-[1.02]"
+                  className="object-cover object-center transition-transform duration-700 ease-brand hover:scale-[1.02]"
                   sizes="(max-width: 1024px) 100vw, 540px"
                 />
               </div>

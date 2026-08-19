@@ -7,6 +7,7 @@ import { WhoQualifies } from "./WhoQualifies";
 import { MeetDoctor } from "./MeetDoctor";
 import { Locations } from "./Locations";
 import { Faq } from "./Faq";
+import { BookConsult } from "./BookConsult";
 import { QualifyForm } from "./QualifyForm";
 import { FinalCta } from "./FinalCta";
 import { Footer } from "./Footer";
@@ -24,6 +25,7 @@ export function HomePage() {
         <WhoQualifies />
         <MeetDoctor />
         <Locations />
+        <BookConsult />
         <Faq />
         <QualifyForm />
         <FinalCta />

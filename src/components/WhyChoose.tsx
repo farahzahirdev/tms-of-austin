@@ -17,70 +17,60 @@ export function WhyChoose() {
   return (
     <section id="why-choose" className="why-choose-section bt-section scroll-mt-24">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
-        <Reveal>
-          <SectionHeader
-            eyebrow={copy.whyChoose.eyebrow}
-            headline={copy.whyChoose.headline}
-            body={copy.whyChoose.body}
-          />
-        </Reveal>
+        <div className="why-choose-layout">
+          <Reveal className="why-choose-media">
+            <div className="why-choose-visual-frame overflow-hidden">
+              <div className="relative aspect-[4/3] w-full sm:aspect-[16/10] lg:aspect-[3/4]">
+                <Image
+                  src={site.images.whyChoose}
+                  alt="TMS of Austin clinic — BrainsWay Deep TMS in the greater Austin area"
+                  fill
+                  sizes="(max-width: 1023px) 100vw, 38vw"
+                  className="why-choose-visual-img object-cover object-center"
+                  priority={false}
+                />
+              </div>
+            </div>
+          </Reveal>
 
-        <ul className="why-choose-highlights mt-8 flex flex-wrap justify-center gap-2.5 sm:gap-3">
-          {trustHighlights.map((label) => (
-            <li key={label}>
-              <span className="why-choose-highlight">
-                <CheckCircle2 className="h-4 w-4 shrink-0" aria-hidden />
-                {label}
-              </span>
-            </li>
-          ))}
-        </ul>
-
-        <Reveal className="mt-12 lg:mt-14">
-          <div className="why-choose-visual-frame">
-            <Image
-              src={site.images.whyChoose}
-              alt="Person laughing with joy — representing relief and hope after treatment"
-              width={1024}
-              height={306}
-              sizes="(max-width: 1140px) 100vw, 1140px"
-              className="why-choose-visual-img"
-              priority={false}
+          <Reveal className="why-choose-intro">
+            <SectionHeader
+              eyebrow={copy.whyChoose.eyebrow}
+              headline={copy.whyChoose.headline}
+              body={copy.whyChoose.body}
+              splitOnDesktop
+              className="!mx-0 !max-w-none"
             />
-            <div className="why-choose-visual-shade" aria-hidden />
-            <div className="why-choose-visual-caption">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-bt-lavender">
-                Patient-centered care
-              </p>
-              <p className="mt-1 font-heading text-lg font-semibold text-white sm:text-xl">
-                Feel like yourself again
-              </p>
-            </div>
-            <div className="why-choose-visual-badge">
-              <p className="text-[10px] font-bold uppercase tracking-wider text-bt-accent-ink">
-                Powered by
-              </p>
-              <p className="font-heading text-base font-semibold text-bt-ink">BrainsWay</p>
-            </div>
-          </div>
-        </Reveal>
 
-        <StaggerGrid className="why-choose-cards mt-8 sm:mt-10" staggerMs={70}>
-          {copy.whyChoose.cards.map((card, i) => {
-            const Icon = icons[i] ?? Focus;
-            return (
-              <article key={card.title} className="why-choose-card h-full">
-                <span className="why-choose-card-icon">
-                  <Icon className="h-5 w-5" aria-hidden />
-                </span>
-                <div className="min-w-0 flex-1">
-                  <h3 className="text-lg">{card.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-bt-body">{card.body}</p>
-                </div>
-              </article>
-            );
-          })}
-        </StaggerGrid>
+            <ul className="why-choose-highlights mt-6 flex flex-wrap justify-center gap-2 sm:gap-2.5 lg:mt-7 lg:justify-start">
+              {trustHighlights.map((label) => (
+                <li key={label}>
+                  <span className="why-choose-highlight">
+                    <CheckCircle2 className="h-4 w-4 shrink-0" aria-hidden />
+                    {label}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+
+          <StaggerGrid className="why-choose-cards" staggerMs={60}>
+            {copy.whyChoose.cards.map((card, i) => {
+              const Icon = icons[i] ?? Focus;
+              return (
+                <article key={card.title} className="why-choose-card">
+                  <span className="why-choose-card-icon">
+                    <Icon className="h-[1.125rem] w-[1.125rem]" aria-hidden />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="text-base font-semibold leading-snug text-bt-ink">{card.title}</h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-bt-body">{card.body}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </StaggerGrid>
+        </div>
       </div>
     </section>
   );

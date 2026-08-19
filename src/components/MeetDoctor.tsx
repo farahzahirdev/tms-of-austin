@@ -47,7 +47,7 @@ export function MeetDoctor() {
                 <Phone className="h-4 w-4 shrink-0" aria-hidden />
                 {copy.meetDoctor.primaryCta} {site.phone}
               </Button>
-              <Button href={site.routes.qualify} variant="secondary">
+              <Button href={site.routes.bookConsult} variant="secondary">
                 {copy.meetDoctor.secondaryCta}
               </Button>
             </div>

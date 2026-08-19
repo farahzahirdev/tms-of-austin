@@ -2,7 +2,7 @@ const ctas = {
   call: "Call",
   qualify: "Find out if you Qualify",
   qualifyShort: "Qualify",
-  bookConsult: "Book your Free Consultation",
+  bookConsult: "Book a Free 10 Minute Consultation",
   bookConsultShort: "Book Consult",
 } as const;
 
@@ -18,6 +18,7 @@ export const copy = {
       faq: "FAQ",
     },
     qualifyCta: ctas.bookConsultShort,
+    bookCta: ctas.bookConsultShort,
   },
   hero: {
     tagline: "Feel like yourself again.",
@@ -77,7 +78,7 @@ export const copy = {
         body: "Treatment fits into your weekly routine with brief in-office visits and no recovery time needed.",
       },
     ],
-    cta: ctas.qualify,
+    cta: ctas.bookConsult,
   },
   whyChoose: {
     eyebrow: "Why TMS of Austin",
@@ -194,27 +195,35 @@ export const copy = {
       },
     ],
   },
-  qualify: {
-    eyebrow: "Free Consultation",
+  bookConsult: {
+    eyebrow: "Schedule",
     headline: ctas.bookConsult,
+    body: "Choose a time that works for you. In this brief call, our team will answer your questions about Deep TMS, review next steps, and help you understand whether treatment may be right for you.",
+    callPrompt: "Prefer to talk first?",
+    qualifyLink: "Find out if you Qualify instead",
+  },
+  qualify: {
+    eyebrow: "Get Started",
+    headline: ctas.qualify,
     body: "Answer a few quick questions about your symptoms and treatment history. If Deep TMS may be right for you, you can schedule on the next step.",
     formTitle: "Qualification Survey",
     formSubtitle: "Confidential. Takes about 2 minutes.",
+    bookLink: "Ready to pick a time? Book a free consultation",
     callPrompt: "Prefer to talk now?",
     trustLine: "Treatment eligibility is determined after an in-person evaluation. Individual results vary.",
   },
   finalCta: {
     headline: "Ready to Feel Like Yourself Again?",
-    body: "Call TMS of Austin to speak with our team, or book your free consultation online — answer a few quick questions to get started.",
+    body: "Call TMS of Austin, book a free 10-minute consultation online, or find out if you qualify for Deep TMS with BrainsWay.",
     primaryCta: ctas.call,
     secondaryCta: ctas.bookConsult,
   },
   floatingCta: {
-    survey: ctas.bookConsultShort,
+    bookConsult: ctas.bookConsultShort,
     call: ctas.call,
   },
   footer: {
-    surveyCta: ctas.bookConsult,
+    bookCta: ctas.bookConsult,
     tagline:
       "FDA-approved BrainsWay Deep TMS in Austin, TX — serving South Austin, North/Central Austin, Cedar Park, and the greater metro area.",
     disclaimer:

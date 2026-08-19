@@ -10,6 +10,7 @@ export const site = {
   emailHref: "mailto:contact@tmsofaustin.com",
   website: "https://www.tmsofaustin.com",
   routes: {
+    bookConsult: "/#book-consult",
     qualify: "/#qualify",
     tms: "/#tms",
     whyChoose: "/#why-choose",
@@ -19,10 +20,10 @@ export const site = {
     faq: "/#faq",
   },
   images: {
-    tmsTreatment: "/images/what-is-tms.jpg",
+    tmsTreatment: "/images/image03.jpg",
     hero: "/images/hero-bg.jpg",
-    whyChoose: "/images/why-choose-bg.jpg",
-    faq: "/images/faq.jpg",
+    whyChoose: "/images/image02.webp",
+    faq: "/images/image01.jpg",
     drAragon: "/images/dr-ramon-aragon.jpg",
   },
   locations: [
@@ -59,10 +60,17 @@ export const site = {
   /**
    * GHL embeds (Rise4 / go.4tms.com)
    * Survey: 3j8JkYokCF658GJctxs0
+   * Calendar: 0HvSXkBRHAjwOOrIX2sd
    */
   ghl: {
     origin: "https://go.4tms.com",
     embedScriptSrc: "https://go.4tms.com/js/form_embed.js",
+    calendar: {
+      id: "0HvSXkBRHAjwOOrIX2sd",
+      iframeId: "RYNwUs1LqGXbEoeQyJXB_1787075047806",
+      src: "https://go.4tms.com/widget/booking/0HvSXkBRHAjwOOrIX2sd",
+      title: "Book a Free 10 Minute Consultation",
+    },
     qualifySurvey: {
       id: "3j8JkYokCF658GJctxs0",
       iframeId: "3j8JkYokCF658GJctxs0",

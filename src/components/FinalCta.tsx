@@ -23,7 +23,7 @@ export function FinalCta() {
               {copy.finalCta.primaryCta} {site.phone}
               <ArrowRight className="h-4 w-4" aria-hidden />
             </Button>
-            <Button href={site.routes.qualify} variant="secondary">
+            <Button href={site.routes.bookConsult} variant="secondary">
               {copy.finalCta.secondaryCta}
             </Button>
           </div>

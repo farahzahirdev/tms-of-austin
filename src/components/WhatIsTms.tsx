@@ -13,25 +13,25 @@ export function WhatIsTms() {
     <section id="tms" className="bt-section">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          <Reveal className="relative order-2 lg:order-1">
+          <Reveal className="relative order-2 lg:order-2">
             <div className="overflow-hidden rounded-brand shadow-card">
               <div className="relative aspect-[4/3] sm:aspect-[16/10]">
                 <Image
                   src={site.images.tmsTreatment}
-                  alt="Person laughing with joy — representing relief and hope after Deep TMS treatment"
+                  alt="BrainsWay Deep TMS treatment room at TMS of Austin"
                   fill
-                  className="object-cover object-[85%_center] transition-transform duration-700 ease-brand hover:scale-[1.02]"
+                  className="object-cover object-center transition-transform duration-700 ease-brand hover:scale-[1.02]"
                   sizes="(max-width: 1024px) 100vw, 560px"
                 />
               </div>
             </div>
-            <div className="absolute -bottom-5 right-4 rounded-brand border border-bt-line bg-bt-card p-4 shadow-lift transition-transform duration-300 hover:-translate-y-1 sm:right-5 lg:-right-6">
+            <div className="absolute -bottom-5 left-4 rounded-brand border border-bt-line bg-bt-card p-4 shadow-lift transition-transform duration-300 hover:-translate-y-1 sm:left-5 lg:-left-6">
               <p className="text-xs font-bold uppercase tracking-wider text-bt-accent-ink">Powered by</p>
               <p className="font-heading text-lg font-semibold text-bt-ink">BrainsWay</p>
             </div>
           </Reveal>
 
-          <Reveal className="order-1 space-y-8 lg:order-2" delay={100}>
+          <Reveal className="order-1 space-y-8 lg:order-1" delay={100}>
             <SectionHeader
               eyebrow={copy.whatIsTms.eyebrow}
               headline={copy.whatIsTms.headline}
@@ -60,8 +60,11 @@ export function WhatIsTms() {
               })}
             </ul>
 
-            <div className="flex justify-center lg:justify-start">
-              <Button href={site.routes.qualify}>{copy.whatIsTms.cta}</Button>
+            <div className="flex flex-wrap justify-center gap-3 lg:justify-start">
+              <Button href={site.routes.bookConsult}>{copy.whatIsTms.cta}</Button>
+              <Button href={site.routes.qualify} variant="secondary">
+                {copy.ctas.qualify}
+              </Button>
             </div>
           </Reveal>
         </div>

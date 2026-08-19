@@ -44,6 +44,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href={site.ghl.origin} />
+        <link rel="prefetch" href={site.ghl.calendar.src} />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
           rel="stylesheet"
@@ -51,6 +52,12 @@ export default function RootLayout({
       </head>
       <body className="font-sans">
         {children}
+        {/*
+          GHL's embed script resizes booking/survey iframes via postMessage. If the
+          listener isn't attached before the widget reports height, the iframe stays
+          at its starting size. afterInteractive registers early — before the
+          widget finishes booting — unlike lazyOnload which often loses that race.
+        */}
         <Script src={site.ghl.embedScriptSrc} strategy="afterInteractive" />
       </body>
     </html>

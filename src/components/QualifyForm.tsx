@@ -1,12 +1,13 @@
 import { Mail, Phone } from "lucide-react";
 import { copy } from "@/content/copy";
 import { site } from "@/content/site";
+import { Button } from "./Button";
 import { GhlSurveyForm } from "./GhlSurveyForm";
 import { Reveal } from "./Reveal";
 
 export function QualifyForm() {
   return (
-    <section id="qualify" className="bt-section" aria-labelledby="qualify-heading">
+    <section id="qualify" className="bt-section bg-bt-paper" aria-labelledby="qualify-heading">
       <div className="mx-auto max-w-content px-4 sm:px-6 lg:px-8">
         <div className="bt-embed-layout">
           <Reveal className="bt-embed-copy space-y-5 lg:sticky lg:top-28">
@@ -54,6 +55,12 @@ export function QualifyForm() {
             </ul>
 
             <p className="text-center text-sm text-bt-muted lg:text-left">{copy.qualify.trustLine}</p>
+
+            <div className="flex justify-center lg:justify-start">
+              <Button href={site.routes.bookConsult} variant="secondary">
+                {copy.qualify.bookLink}
+              </Button>
+            </div>
           </Reveal>
 
           <div className="animate-fade-in bt-form-embed" style={{ animationDelay: "120ms" }}>
