@@ -573,15 +573,15 @@ html {
   z-index: 1;
   background:
     linear-gradient(
-      95deg,
+      to right,
       rgba(248, 250, 251, 0.97) 0%,
-      rgba(248, 250, 251, 0.94) 34%,
-      rgba(238, 244, 247, 0.82) 50%,
-      rgba(248, 250, 251, 0.48) 64%,
-      rgba(248, 250, 251, 0.2) 80%,
-      transparent 100%
+      rgba(248, 250, 251, 0.93) 30%,
+      rgba(238, 244, 247, 0.78) 42%,
+      rgba(248, 250, 251, 0.18) 52%,
+      transparent 58%
     ),
-    linear-gradient(to top, rgba(248, 250, 251, 0.88) 0%, transparent 28%);
+    linear-gradient(to top, rgba(248, 250, 251, 0.8) 0%, transparent 26%) left bottom / 62% 100%
+      no-repeat;
   pointer-events: none;
 }
 
@@ -801,20 +801,14 @@ html {
   .bt-hero-overlay {
     background:
       linear-gradient(
-        95deg,
+        to right,
         rgba(248, 250, 251, 0.98) 0%,
-        rgba(248, 250, 251, 0.94) 40%,
-        rgba(238, 244, 247, 0.82) 58%,
-        rgba(248, 250, 251, 0.45) 72%,
-        transparent 88%
+        rgba(248, 250, 251, 0.92) 36%,
+        rgba(238, 244, 247, 0.5) 48%,
+        transparent 58%
       ),
-      linear-gradient(
-        180deg,
-        rgba(248, 250, 251, 0.97) 0%,
-        rgba(248, 250, 251, 0.92) 45%,
-        rgba(238, 244, 247, 0.86) 100%
-      ),
-      linear-gradient(to top, rgba(248, 250, 251, 0.88) 0%, transparent 32%);
+      linear-gradient(to top, rgba(248, 250, 251, 0.72) 0%, transparent 24%) left bottom / 100% 40%
+        no-repeat;
   }
 }
 
