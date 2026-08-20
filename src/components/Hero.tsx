@@ -19,6 +19,7 @@ export function Hero() {
           alt=""
           fill
           priority
+          quality={92}
           sizes="100vw"
           className="bt-hero-bg-img"
         />
