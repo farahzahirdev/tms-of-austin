@@ -11,13 +11,12 @@ import { BookConsult } from "./BookConsult";
 import { QualifyForm } from "./QualifyForm";
 import { FinalCta } from "./FinalCta";
 import { Footer } from "./Footer";
-import { FloatingCTA } from "./FloatingCTA";
 
 export function HomePage() {
   return (
     <>
       <Header />
-      <main id="main-content" className="pb-24 lg:pb-0">
+      <main id="main-content">
         <Hero />
         <WhatIsTms />
         <WhyChoose />
@@ -31,7 +30,6 @@ export function HomePage() {
         <FinalCta />
       </main>
       <Footer />
-      <FloatingCTA />
     </>
   );
 }

@@ -218,10 +218,6 @@ export const copy = {
     primaryCta: ctas.call,
     secondaryCta: ctas.bookConsult,
   },
-  floatingCta: {
-    bookConsult: ctas.bookConsultShort,
-    call: ctas.call,
-  },
   footer: {
     bookCta: ctas.bookConsult,
     tagline:
