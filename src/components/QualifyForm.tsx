@@ -63,8 +63,10 @@ export function QualifyForm() {
             </div>
           </Reveal>
 
-          <div className="animate-fade-in bt-form-embed" style={{ animationDelay: "120ms" }}>
-            <GhlSurveyForm />
+          <div className="animate-fade-in" style={{ animationDelay: "120ms" }}>
+            <div className="bt-embed-panel">
+              <GhlSurveyForm />
+            </div>
           </div>
         </div>
       </div>
